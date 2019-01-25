@@ -85,14 +85,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //   var param = {
-                //     'merchantid' : getStore('merchantid'),
-                //     'tableid' : getStore('tableid'),
-                //     'user' : userCode
-                //   };
-                //
-                //   // store.state.stompClient.send('/ws/UserLogin', {}, JSON.stringify(param))
-
                 HashMap<String, String> map = new HashMap<String, String>();
                 map.put("merchantid", "007JP1458120001");
                 map.put("tableid", "88");
@@ -109,26 +101,6 @@ public class MainActivity extends AppCompatActivity {
                             toast(throwable.getMessage());
                         });
 
-
-
-//                mStompClient.send("/app/welcome","{\"name\":\""+editText.getText()+"\"}")
-//                        .subscribe(new Subscriber<Void>() {
-//                            @Override
-//                            public void onCompleted(){
-//
-//                            }
-//
-//                            @Override
-//                            public void onError(Throwable e) {
-//                                e.printStackTrace();
-//                                toast("发送错误");
-//                            }
-//
-//                            @Override
-//                            public void onNext(Void aVoid) {
-//
-//                            }
-//                        });
 
 
             }
