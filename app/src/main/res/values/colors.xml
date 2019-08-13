@@ -3,4 +3,31 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+
+    <color name="color_b1130a">#b1130a</color>
+
+    <color name="mainColorTrue">#1E90FF</color>
+    <color name="mainColor">#0071Ba</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="theme">#F66150</color>
+    <color name="app_theme">#6DC6B8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="graye6">#e6e6e6</color>
+    <color name="black">#000000</color>
+    <color name="color_33">#333333</color>
+    <color name="color_66">#666666</color>
+    <color name="color_99">#999999</color>
+    <!--番茄红-->
+    <color name="red">#FF0000</color>
+    <color name="red_light">#FF6347</color>
+    <color name="light_red">#EE7600</color>
+
+    <color name="window_background_color">#F7F7F9</color>
+    <color name="background">#F5F5F5</color>
+    <color name="view_bg_color">#FFFAFA</color>
+    <color name="blue">#1E90FF</color>
+    <color name="green">#43CD80</color>
 </resources>
