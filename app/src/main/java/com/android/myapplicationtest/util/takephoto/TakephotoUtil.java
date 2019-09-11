@@ -3,17 +3,22 @@ package com.android.myapplicationtest.util.takephoto;
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
-import android.support.design.widget.BottomSheetDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.myapplicationtest.R;
+import com.android.myapplicationtest.activity.MainActivity;
 import com.android.myapplicationtest.util.ToastUtil;
+import com.chunsheng.permission.IPermission;
+import com.chunsheng.permission.PermissionUtil;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.yanzhenjie.permission.Action;
 import com.yanzhenjie.permission.AndPermission;
 
 import java.util.List;
+
 
 
 /**
@@ -53,6 +58,7 @@ public class TakephotoUtil {
 
     //  6.0 检查 权限
     public void checkPermissions(final IUploadEvent nUploadListener) {
+
         //mUploadListener = nUploadListener;
         AndPermission.with(context)
                 .runtime()
@@ -77,6 +83,27 @@ public class TakephotoUtil {
                     }
                 })
                 .start();
+
+        //使用方式
+//        PermissionUtil.getInstance(context)
+//                .requestRunTimePermission(new String[]{
+//                                Manifest.permission.CAMERA,
+//                                Manifest.permission.READ_EXTERNAL_STORAGE},
+//                        new IPermission() {
+//                            @Override
+//                            public void onGranted() {
+//                                setUploadListener(nUploadListener) ;
+//                                initBottomSheetDialog();
+//                            }
+//
+//                            @Override
+//                            public void onDenied(List<String> deniedPermission) {
+//                                ToastUtil.getInstance().toast("授权未通过，暂不能变更头像");
+//
+//                            }
+//                        }
+//                );
+
 
 
     }

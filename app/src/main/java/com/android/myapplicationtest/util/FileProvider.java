@@ -29,7 +29,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.ParcelFileDescriptor;
 import android.provider.OpenableColumns;
-import android.support.v4.content.ContextCompat;
+
 import android.text.TextUtils;
 import android.webkit.MimeTypeMap;
 
@@ -40,6 +40,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.core.content.ContextCompat;
 
 import static org.xmlpull.v1.XmlPullParser.END_DOCUMENT;
 import static org.xmlpull.v1.XmlPullParser.START_TAG;
@@ -292,7 +294,7 @@ import static org.xmlpull.v1.XmlPullParser.START_TAG;
  * <p>
  * There are a variety of ways to serve the content URI for a file to a client app. One common way
  * is for the client app to start your app by calling
- * {@link android.app.Activity#startActivityForResult(Intent, int, Bundle) startActivityResult()},
+ * {@link android.app.Activity# startActivityResult()},
  * which sends an {@link Intent} to your app to start an {@link android.app.Activity} in your app.
  * In response, your app can immediately return a content URI to the client app or present a user
  * interface that allows the user to pick a file. In the latter case, once the user picks the file
@@ -302,14 +304,14 @@ import static org.xmlpull.v1.XmlPullParser.START_TAG;
  * <p>
  *  You can also put the content URI in a {@link android.content.ClipData} object and then add the
  *  object to an {@link Intent} you send to a client app. To do this, call
- *  {@link Intent#setClipData(ClipData) Intent.setClipData()}. When you use this approach, you can
+ *  {@link Intent# Intent.setClipData()}. When you use this approach, you can
  *  add multiple {@link android.content.ClipData} objects to the {@link Intent}, each with its own
  *  content URI. When you call {@link Intent#setFlags(int) Intent.setFlags()} on the {@link Intent}
  *  to set temporary access permissions, the same permissions are applied to all of the content
  *  URIs.
  * </p>
  * <p class="note">
- *  <strong>Note:</strong> The {@link Intent#setClipData(ClipData) Intent.setClipData()} method is
+ *  <strong>Note:</strong> The {@link Intent#) Intent.setClipData()} method is
  *  only available in platform version 16 (Android 4.1) and later. If you want to maintain
  *  compatibility with previous versions, you should send one content URI at a time in the
  *  {@link Intent}. Set the action to {@link Intent#ACTION_SEND} and put the URI in data by calling

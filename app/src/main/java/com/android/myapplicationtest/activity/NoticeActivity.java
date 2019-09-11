@@ -11,11 +11,12 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.widget.TextView;
 
 import com.android.myapplicationtest.R;
+
+import androidx.core.app.NotificationCompat;
 
 public class NoticeActivity extends Activity {
 

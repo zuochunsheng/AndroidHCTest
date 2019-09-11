@@ -74,6 +74,7 @@
         <activity
             android:name=".util.takephoto.ShadowActivity"
             android:theme="@android:style/Theme.Translucent" />
+
         <activity android:name=".activity.NumOcrActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

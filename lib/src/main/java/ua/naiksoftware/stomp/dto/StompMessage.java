@@ -1,7 +1,5 @@
 package ua.naiksoftware.stomp.dto;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -9,6 +7,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import io.reactivex.annotations.NonNull;
+import io.reactivex.annotations.Nullable;
 
 /**
  * Created by naik on 05.05.16.

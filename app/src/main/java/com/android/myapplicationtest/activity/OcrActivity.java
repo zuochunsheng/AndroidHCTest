@@ -12,9 +12,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.myapplicationtest.R;
+import com.android.myapplicationtest.util.FileProvider;
 import com.android.myapplicationtest.util.LogUtil;
 import com.android.myapplicationtest.util.SDUtils;
 import com.android.myapplicationtest.util.ToastUtil;
@@ -32,7 +30,6 @@ import com.android.myapplicationtest.util.takephoto.IUploadEvent;
 import com.android.myapplicationtest.util.takephoto.TakephotoUtil;
 import com.bumptech.glide.Glide;
 import com.googlecode.tesseract.android.TessBaseAPI;
-import com.yanzhenjie.permission.FileProvider;
 
 import org.opencv.android.Utils;
 import org.opencv.core.Mat;
@@ -44,6 +41,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import io.reactivex.annotations.NonNull;
 import top.zibin.luban.Luban;
 import top.zibin.luban.OnCompressListener;
 

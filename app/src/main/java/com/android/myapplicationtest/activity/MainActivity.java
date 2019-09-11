@@ -1,6 +1,5 @@
 package com.android.myapplicationtest.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +17,7 @@ import org.reactivestreams.Subscriber;
 
 import java.util.HashMap;
 
+import androidx.appcompat.app.AppCompatActivity;
 import io.reactivex.CompletableTransformer;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;

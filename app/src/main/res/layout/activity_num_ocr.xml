@@ -8,4 +8,28 @@
     tools:context=".activity.NumOcrActivity">
 
 
+    <!-- android:spacing="10dp"
+     android:unselectedAlpha="1"-->
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </Gallery>
+
+    <!--<com.android.myapplicationtest.view.MyGallery-->
+    <!--android:id="@+id/gallery"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</com.android.myapplicationtest.view.MyGallery>-->
+
+    <ImageSwitcher
+        android:id="@+id/is"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageSwitcher>
+
 </LinearLayout>
+
+

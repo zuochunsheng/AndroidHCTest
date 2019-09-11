@@ -7,13 +7,14 @@ buildscript {
         maven{
             url 'http://maven.aliyun.com/nexus/content/groups/public'
         }
+        maven{  url"https://maven.google.com"}
         maven { url "https://jitpack.io" }
         google()
         jcenter()
-        
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha05'
         //classpath 'com.android.tools.build:gradle:3.3.0-alpha13'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -26,11 +27,20 @@ allprojects {
         maven{
             url 'http://maven.aliyun.com/nexus/content/groups/public'
         }
+        maven{  url"https://maven.google.com"}
         maven { url "https://jitpack.io" }
         google()
         jcenter()
-        
+        mavenCentral()
     }
+
+    //提高报错信息至1000行
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xmaxerrs" << "1000"
+        }
+    }
+
 }
 
 task clean(type: Delete) {

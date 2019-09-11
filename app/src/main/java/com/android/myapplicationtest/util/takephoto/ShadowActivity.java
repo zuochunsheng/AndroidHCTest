@@ -12,10 +12,11 @@ import android.provider.MediaStore;
 import android.util.Log;
 
 import com.android.myapplicationtest.R;
+import com.android.myapplicationtest.util.FileProvider;
 import com.android.myapplicationtest.util.LogUtil;
 import com.android.myapplicationtest.util.ToastUtil;
 import com.yalantis.ucrop.UCrop;
-import com.yanzhenjie.permission.FileProvider;
+
 
 import java.io.File;
 
