@@ -48,6 +48,7 @@
             </intent-filter>
             -->
         </activity>
+        <!--文字识别-->
         <!--<activity android:name=".activity.OcrActivity">-->
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
@@ -75,6 +76,7 @@
             android:name=".util.takephoto.ShadowActivity"
             android:theme="@android:style/Theme.Translucent" />
 
+       <!-- 图片画廊 -->
         <activity android:name=".activity.NumOcrActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

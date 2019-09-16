@@ -63,7 +63,6 @@ public class TakephotoUtil {
         AndPermission.with(context)
                 .runtime()
                 .permission(Manifest.permission.CAMERA,
-                        Manifest.permission.READ_EXTERNAL_STORAGE,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 .onGranted(new Action<List<String>>() {
                     @Override
