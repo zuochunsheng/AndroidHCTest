@@ -17,122 +17,17 @@ import android.widget.ViewSwitcher;
 import com.android.myapplicationtest.R;
 import com.android.myapplicationtest.util.LogUtil;
 
-public class NumOcrActivity extends Activity implements ViewSwitcher.ViewFactory {
+public class NumOcrActivity extends Activity  {
 
-    private Gallery gallery;
-    //private MyGallery gallery;
-    private ImageSwitcher is;
-    private ImageAdapter imageAdapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_num_ocr);
-        gallery = findViewById(R.id.gallery);
-        is=(ImageSwitcher) findViewById(R.id.is);
-
-        //设置图片适配器   
-        imageAdapter = new ImageAdapter(this);
-        gallery.setAdapter(imageAdapter);
-        gallery.setSpacing(10);//图与图之间的横向距离
-        //gallery.setSelection(2);
-        //设置监听器       
-        gallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                LogUtil.e("galley","onItemClick 点击 "+ position + "张图片");
-            }
-        });
-        gallery.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                LogUtil.e("galley","onItemSelected 选中 "+ position + "张图片");
-                // 选中Gallery中某个图像时，放大显示该图像
-                imageAdapter.setSelectItem(position);
-                imageAdapter.notifyDataSetChanged();//当滑动时，事件响应，通知适配器更新数据
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
 
 
-        is.setFactory(this);
-        //添加动画
-        is.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
-        is.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-    }
-
-    @Override
-    public View makeView() {
-        ImageView image = new ImageView(this);
-        image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-
-        return image;
     }
 
 
-
-
-    class ImageAdapter extends BaseAdapter {
-
-        private Context context;
-        //图片源数组   
-        private Integer[] imageInteger = {
-                R.drawable.logo, R.drawable.phone_order, R.drawable.timg, R.drawable.vp
-        };
-        private int selectItem;
-
-        public ImageAdapter(Context c) {
-            context = c;
-        }
-
-        public void setSelectItem(int selectItem) {
-            this.selectItem = selectItem;
-        }
-        // 获取图片的个数   
-        @Override
-        public int getCount() {
-            //return imageInteger.length;
-            //1
-            return Integer.MAX_VALUE;//最大值能使图片无限滑动
-        }
-
-        // 获取图片在库中的位置     
-        @Override
-        public Object getItem(int position) {
-            return imageInteger[position];
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return position;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            Log.e("galley", "position="+position+",res的角标="+position%imageInteger.length);
-
-            ImageView imageView = new ImageView(context);
-            // 给ImageView设置资源       
-            //imageView.setImageResource(imageInteger[position]);
-            //2
-            imageView.setImageResource(imageInteger[position%imageInteger.length]);//实现循环滑动
-            // 设置显示比例类型         
-            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            // 设置布局 图片120*80        
-
-            //imageView.setLayoutParams(new Gallery.LayoutParams(120, 80));
-            //imageView.setLayoutParams(new Gallery.LayoutParams(200, 160));
-            if(selectItem == position){
-                imageView.setLayoutParams(new Gallery.LayoutParams(320,240));
-            }else {
-                imageView.setLayoutParams(new Gallery.LayoutParams(160,120));//未选中
-            }
-            return imageView;
-        }
-
-    }
 }

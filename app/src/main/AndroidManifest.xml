@@ -77,7 +77,10 @@
             android:theme="@android:style/Theme.Translucent" />
 
        <!-- 图片画廊 -->
+        <activity android:name=".activity.GalleryActivity"/>
         <activity android:name=".activity.NumOcrActivity">
+        </activity>
+        <activity android:name=".activity.MvpRequestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

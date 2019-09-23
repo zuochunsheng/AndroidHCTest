@@ -29,7 +29,7 @@ import com.android.myapplicationtest.util.ToastUtil;
 import com.android.myapplicationtest.util.takephoto.IUploadEvent;
 import com.android.myapplicationtest.util.takephoto.TakephotoUtil;
 import com.bumptech.glide.Glide;
-import com.googlecode.tesseract.android.TessBaseAPI;
+
 
 import org.opencv.android.Utils;
 import org.opencv.core.Mat;
@@ -132,22 +132,6 @@ public class OcrActivity extends Activity implements View.OnClickListener{
 
     }
 
-    public String detectText(Bitmap bitmap) {
-
-        TessBaseAPI tessBaseAPI = new TessBaseAPI();
-        String path = ""; //训练数据路径
-
-        tessBaseAPI.setDebug(true);
-        tessBaseAPI.init(path, "eng"); //eng为识别语言
-        tessBaseAPI.setVariable(TessBaseAPI.VAR_CHAR_WHITELIST, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"); // 识别白名单
-        tessBaseAPI.setVariable(TessBaseAPI.VAR_CHAR_BLACKLIST, "!@#$%^&*()_+=-[]}{;:'\"\\|~`,./<>?"); // 识别黑名单
-        tessBaseAPI.setPageSegMode(TessBaseAPI.PageSegMode.PSM_AUTO_OSD);//设置识别模式
-
-        tessBaseAPI.setImage(bitmap); //设置需要识别图片的bitmap
-        String inspection = tessBaseAPI.getHOCRText(0);
-        tessBaseAPI.end();
-        return inspection;
-    }
 
 
     //选取图片
@@ -408,7 +392,7 @@ public class OcrActivity extends Activity implements View.OnClickListener{
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
-                    recognition(mBitmap);
+                   // recognition(mBitmap);
                 }
                 break;
         }
@@ -444,41 +428,5 @@ public class OcrActivity extends Activity implements View.OnClickListener{
         return file.exists();
     }
 
-    //识别图像
-    private void recognition(final Bitmap bitmap) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                if (!checkTrainedDataExists()) {
-                    SDUtils.assets2SD(getApplicationContext(), LANGUAGE_PATH, DEFAULT_LANGUAGE_NAME);
-                }
-                TessBaseAPI tessBaseAPI = new TessBaseAPI();
-                tessBaseAPI.setDebug(true);
-                tessBaseAPI.init(DATAPATH, DEFAULT_LANGUAGE);
-                //识别的图片
-                tessBaseAPI.setImage(bitmap);
-                //获得识别后的字符串
-                String text = "";
-                text = "识别结果：" + "\n" + tessBaseAPI.getUTF8Text();
-                final String finalText = text;
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        resultTv.setText(finalText);
-                        String str = "";
-                        for (int i = 0; i < finalText.length(); i++) {
-                            if ((finalText.charAt(i) >= 48 && finalText.charAt(i) <= 57)
-                                 //   || (finalText.charAt(i) >= 65 && finalText.charAt(i) <= 90)
-                            ) {
-                                str += finalText.charAt(i);
-                            }
-                        }
-                        txtFinal.setText(str);
-                    }
-                });
-                tessBaseAPI.end();
-            }
-        }).start();
 
-    }
 }
