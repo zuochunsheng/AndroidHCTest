@@ -1,7 +1,7 @@
 package com.android.myapplicationtest.logic.user;
 
 import com.android.myapplicationtest.net.BaseModel;
-import com.android.myapplicationtest.net.HttpResultObserver;
+import com.android.myapplicationtest.net.HttpResultSingleObserver;
 
 import io.reactivex.disposables.Disposable;
 
@@ -11,7 +11,8 @@ import io.reactivex.disposables.Disposable;
  * @description：
  */
 public class UserModel extends BaseModel {
-    public Disposable getUser(String userName, HttpResultObserver<String> observer) {
-        return getApiService().getUser(userName).subscribeWith(observer);
+    public Disposable getUser(String userName, HttpResultSingleObserver<String> observer) {
+        return getApiService().getUser(userName)
+                .subscribeWith(observer);
     }
 }

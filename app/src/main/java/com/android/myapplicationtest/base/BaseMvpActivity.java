@@ -32,8 +32,7 @@ public abstract class BaseMvpActivity  <P extends BasePresenter<? extends IBaseV
         addToPresenters(mPresenter);
 
         initView(savedInstanceState);
-        //initListener();
-        //initData();
+
     }
 
     @Override
@@ -92,15 +91,6 @@ public abstract class BaseMvpActivity  <P extends BasePresenter<? extends IBaseV
 
     }
 
-    /**
-     * 初始化Listener
-     */
-    //protected abstract void initListener();
-
-    /**
-     * 初始化数据
-     */
-    //protected abstract void initData();
 
     /**
      * 把其他的Presenter添加到Presenters集合里

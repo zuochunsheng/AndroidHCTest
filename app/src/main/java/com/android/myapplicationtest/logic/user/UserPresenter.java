@@ -3,7 +3,7 @@ package com.android.myapplicationtest.logic.user;
 import android.text.TextUtils;
 import com.android.myapplicationtest.base.BasePresenter;
 import io.reactivex.disposables.Disposable;
-import com.android.myapplicationtest.net.HttpResultObserver;
+import com.android.myapplicationtest.net.HttpResultSingleObserver;
 
 /**
  * @author： zcs
@@ -27,7 +27,7 @@ public class UserPresenter extends BasePresenter<UserContract.View> implements U
         }
 
         mView.showLoading("正在加载...");
-        Disposable disposable = mModel.getUser(userName, new HttpResultObserver<String>() {
+        Disposable disposable = mModel.getUser(userName, new HttpResultSingleObserver<String>() {
             @Override
             protected void onResult(String s) {
                 mView.showUser(s);

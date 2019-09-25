@@ -97,6 +97,4 @@ public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implement
     }
 
 
-
-
 }

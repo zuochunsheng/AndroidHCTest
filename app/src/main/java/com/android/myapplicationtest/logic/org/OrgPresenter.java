@@ -1,7 +1,7 @@
 package com.android.myapplicationtest.logic.org;
 
 import com.android.myapplicationtest.base.BasePresenter;
-import com.android.myapplicationtest.net.HttpResultObserver;
+import com.android.myapplicationtest.net.HttpResultSingleObserver;
 import com.android.myapplicationtest.util.LogUtil;
 
 import io.reactivex.disposables.Disposable;
@@ -29,7 +29,7 @@ public class OrgPresenter extends BasePresenter<OrgContract.View> implements Org
             return;
         }
         mView.showLoading();
-        mDisposable = mModel.getOrg(org, new HttpResultObserver<String>() {
+        mDisposable = mModel.getOrg(org, new HttpResultSingleObserver<String>() {
             @Override
             protected void onResult(String s) {
                 mView.showOrg(s);

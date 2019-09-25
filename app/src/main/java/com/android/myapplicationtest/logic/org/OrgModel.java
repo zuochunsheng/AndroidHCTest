@@ -1,7 +1,7 @@
 package com.android.myapplicationtest.logic.org;
 
 import com.android.myapplicationtest.net.BaseModel;
-import com.android.myapplicationtest.net.HttpResultObserver;
+import com.android.myapplicationtest.net.HttpResultSingleObserver;
 
 import io.reactivex.disposables.Disposable;
 
@@ -11,7 +11,7 @@ import io.reactivex.disposables.Disposable;
  * @description：
  */
 public class OrgModel  extends BaseModel {
-    public Disposable getOrg(String org, HttpResultObserver<String> observer) {
+    public Disposable getOrg(String org, HttpResultSingleObserver<String> observer) {
         return getApiService().getOrg(org).subscribeWith(observer);
     }
 }

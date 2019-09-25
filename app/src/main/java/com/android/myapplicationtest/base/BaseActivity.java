@@ -6,18 +6,13 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-
-import com.android.myapplicationtest.util.LogUtil;
 import com.android.myapplicationtest.util.ToastUtil;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 import io.reactivex.annotations.NonNull;
 
@@ -38,42 +33,6 @@ public abstract  class BaseActivity extends AppCompatActivity {
         mView = LayoutInflater.from(this).inflate(getLayoutId(), null);
         setContentView(mView);
         //init(savedInstanceState);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        LogUtil.e(this.getClass().getSimpleName());
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        LogUtil.e(this.getClass().getSimpleName());
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        LogUtil.e(this.getClass().getSimpleName());
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        LogUtil.e(this.getClass().getSimpleName());
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        LogUtil.e(this.getClass().getSimpleName());
-    }
-
-    @Override
-    protected void onDestroy() {
-        LogUtil.e(this.getClass().getSimpleName());
-        super.onDestroy();
     }
 
     @Override
