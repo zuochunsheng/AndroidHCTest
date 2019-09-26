@@ -37,10 +37,11 @@ public class OrgPresenter extends BasePresenter<OrgContract.View> implements Org
             }
 
             @Override
-            protected void onFailure(Throwable e) {
-                mView.showMsg(e.getMessage());
+            protected void onFailure(String error) {
+                mView.showMsg(error);
                 mView.hideLoading();
             }
+
         });
         addDisposable(mDisposable);
     }

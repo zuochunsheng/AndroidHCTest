@@ -1,52 +1,78 @@
 package com.android.myapplicationtest.base;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.os.Build;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.ArraySet;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
+import io.reactivex.annotations.Nullable;
 
 /**
- * @author： zcs
- * @time：2019/9/23 on 17:10
- * @description：
+ * anther: created by zcs on 2019/2/27 18 : 39
+ * description :
  */
-@RequiresApi(api = Build.VERSION_CODES.M)
-public abstract class BaseMvpActivity<P extends BasePresenter<? extends IBaseView>> extends BaseActivity implements IBaseView {
+public abstract class BaseMvpFragment<P extends BasePresenter> extends BaseFragment implements IBaseView {
 
     private ProgressDialog mLoading;
-    //主Presenter
     protected P mPresenter;
     //多个Presenter时候需要的容器
+    @SuppressLint("NewApi")
     private ArraySet<BasePresenter> mPresenters = new ArraySet<>(4);
 
-
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        initLoading();
+    public void onAttach(Context context) {
+        super.onAttach(context);
         if (isSetPresenter()) {
-            mPresenter = getPresenter();
+            mPresenter = createPresenter();
             addToPresenters(mPresenter);
         }
+
     }
 
     protected boolean isSetPresenter() {
         return false;
     }
 
+    protected abstract P createPresenter();
+
+
     @Override
-    protected void onDestroy() {
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        initLoading();
+    }
+
+//    @Override
+//    public void onLazyInitView(@Nullable Bundle savedInstanceState) {
+//        super.onLazyInitView(savedInstanceState);
+//        initLoading();
+//    }
+
+    @SuppressLint("NewApi")
+    @Override
+    public void onDetach() {
+        super.onDetach();
         if (isSetPresenter()) {
             for (BasePresenter presenter : mPresenters) {
                 presenter.detachView();
             }
             mPresenters.clear();
+            // HttpRequestPool.getInstance().cancelRequest(getNetWorkTag());
         }
-        super.onDestroy();
+    }
+
+    /**
+     * 根据具体项目需求创建loading
+     */
+    /**
+     * 根据具体项目需求创建loading
+     */
+    protected void initLoading() {
+        if (mLoading == null) {
+            mLoading = new ProgressDialog(this.getActivity());
+        }
     }
 
     @Override
@@ -71,25 +97,11 @@ public abstract class BaseMvpActivity<P extends BasePresenter<? extends IBaseVie
         }
     }
 
+
     @Override
-    public void showMsg(String msg) {
-        toastS(msg);
-    }
-
-    /**
-     * 初始化Presenter，其他多个Presenter也在该方法创建并调用addToPresenters加入到集合
-     *
-     * @return 主Presenter
-     */
-    protected abstract P getPresenter();
-
-    /**
-     * 根据具体项目需求创建loading
-     */
-    protected void initLoading() {
-        if (mLoading == null) {
-            mLoading = new ProgressDialog(this);
-        }
+    public Context getContext() {
+        //return this.getContext();//循环调用
+        return this.getActivity();
     }
 
 
@@ -101,4 +113,6 @@ public abstract class BaseMvpActivity<P extends BasePresenter<? extends IBaseVie
         presenter.attachView(this);
         mPresenters.add(presenter);
     }
+
+
 }

@@ -35,10 +35,11 @@ public class UserPresenter extends BasePresenter<UserContract.View> implements U
             }
 
             @Override
-            protected void onFailure(Throwable e) {
-                mView.showUser(e.getMessage());
+            protected void onFailure(String error) {
+                mView.showUser(error);
                 mView.hideLoading();
             }
+
         });
         addDisposable(disposable);
     }

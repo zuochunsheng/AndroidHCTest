@@ -16,27 +16,22 @@ public class LogUtil {
     private static final boolean isTest = true;//Config.isTest;// IsTest.IS_TEST;
     private final static String TAG ="tag";
 
-    public static  void e(String string){
+    public static  void e(String msg){
         if(isTest){
-            if(!TextUtils.isEmpty(string)){
-                Log.e(TAG,string);
+            if(!TextUtils.isEmpty(msg)){
+                Log.e(TAG,msg);
             }
-
         }
-
     }
-    public static  void e(String tag, String string){
+    public static  void e(String tag, String msg){
         if(isTest){
-            if(!TextUtils.isEmpty(string)){
-                Log.e(tag,string);
+            if(!TextUtils.isEmpty(msg)){
+                Log.e(tag,msg);
             }
-
         }
-
     }
 
     public static void e(Object object){
-
         if(isTest){
             Gson gson = new Gson();
             String s = gson.toJson(object);
@@ -48,28 +43,40 @@ public class LogUtil {
 
     }
     public static void e(String tag, Object object){
-
+        if(isTest){
+            Gson gson = new Gson();
+            String msg = gson.toJson(object);
+            if(!TextUtils.isEmpty(msg)){
+                Log.e(tag,msg);
+            }
+        }
+    }
+    public static void e(String tag, String msgTitle, Object object){
         if(isTest){
             Gson gson = new Gson();
             String s = gson.toJson(object);
             if(!TextUtils.isEmpty(s)){
-                Log.e(tag,s);
+                Log.e(tag,msgTitle +":"+s);
             }
 
         }
 
     }
-    public static void e(String tag, String title, Object object){
 
+
+    public static void e(String msg, Throwable tr) {
         if(isTest){
-            Gson gson = new Gson();
-            String s = gson.toJson(object);
-            if(!TextUtils.isEmpty(s)){
-                Log.e(tag,title +":"+s);
+            if(!TextUtils.isEmpty(msg) && tr != null){
+                Log.e(TAG,msg,tr);
             }
-
         }
-
+    }
+    public static void e(String tag, String msg, Throwable tr) {
+        if(isTest){
+            if(!TextUtils.isEmpty(msg) && tr != null){
+                Log.e(tag,msg,tr);
+            }
+        }
     }
 
 

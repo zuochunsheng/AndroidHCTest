@@ -1,5 +1,6 @@
 package com.android.myapplicationtest.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -28,7 +29,7 @@ import com.android.myapplicationtest.util.LogUtil;
 
 import androidx.annotation.Nullable;
 
-public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implements UserContract.View, OrgContract.View  {
+public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implements UserContract.View, OrgContract.View {
 
 
     private TextView tvMsg;
@@ -40,7 +41,7 @@ public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implement
 
 
     @Override
-    protected void initView(@Nullable Bundle savedInstanceState) {
+    protected void initViewAndData(@Nullable Bundle savedInstanceState) {
         tvMsg = findViewById(R.id.tv_msg);
         tvMsg2 = findViewById(R.id.tv_msg2);
         btnClick = findViewById(R.id.btn_click);
@@ -49,30 +50,32 @@ public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implement
         initListener();
     }
 
-
+    @Override
+    protected boolean isSetPresenter() {
+        return true;
+    }
 
     @Override
     protected int getLayoutId() {
         return R.layout.activity_base_request;
     }
 
+    @SuppressLint("NewApi")
     @Override
     protected UserPresenter getPresenter() {
         mOrgPresenter = new OrgPresenter();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            addToPresenters(mOrgPresenter);
-        }
+        addToPresenters(mOrgPresenter);
+
         return new UserPresenter();
     }
 
 
     protected void initListener() {
         btnClick.setOnClickListener(new android.view.View.OnClickListener() {
+            @SuppressLint("NewApi")
             @Override
             public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    mPresenter.getUser("togallop");
-                }
+                mPresenter.getUser("togallop");
             }
         });
         btnClick2.setOnClickListener(new android.view.View.OnClickListener() {
@@ -83,7 +86,6 @@ public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implement
         });
 
     }
-
 
 
     @Override

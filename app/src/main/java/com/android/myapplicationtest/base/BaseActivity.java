@@ -6,7 +6,9 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import com.android.myapplicationtest.util.ToastUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +21,10 @@ import io.reactivex.annotations.NonNull;
 /**
  * @author： zcs
  * @time：2019/9/23 on 17:34
- * @description：
- * * Android：Retrofit + RxJava MVP 架构实际应用
- *  * https://www.jianshu.com/p/9de3497930ba
+ * @description： * Android：Retrofit + RxJava MVP 架构实际应用
+ * * https://www.jianshu.com/p/9de3497930ba
  */
-public abstract  class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     //布局View, 要是使用 DataBinding 可能会用到
     protected View mView;
 
@@ -32,7 +33,8 @@ public abstract  class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mView = LayoutInflater.from(this).inflate(getLayoutId(), null);
         setContentView(mView);
-        //init(savedInstanceState);
+
+        initViewAndData(savedInstanceState);
     }
 
     @Override
@@ -66,16 +68,6 @@ public abstract  class BaseActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * 初始化
-     */
-    //protected abstract void init(@Nullable Bundle savedInstanceState);
-
-    /**
-     * @return layoutId
-     */
-    @LayoutRes
-    protected abstract int getLayoutId();
 
     /**
      * 所以权限通过
@@ -134,8 +126,8 @@ public abstract  class BaseActivity extends AppCompatActivity {
     }
 
     /**
-     * @param clazz 启动activity for Result
-     *           @param extras 通过
+     * @param clazz  启动activity for Result
+     * @param extras 通过
      */
     public void startForResult(@NonNull Class<? extends Activity> clazz, @IntRange(to = 0xffff) int requestCode, Bundle extras) {
         Intent intent = new Intent(this, clazz);
@@ -152,7 +144,17 @@ public abstract  class BaseActivity extends AppCompatActivity {
     }
 
     public void toastS(@NonNull String info) {
-        ToastUtil.makeTextShort(this,info);
+        ToastUtil.makeTextShort(this, info);
     }
+
+
+    /*********************子类实现*****************************/
+
+    @LayoutRes
+    protected abstract int getLayoutId();
+
+
+    //初始化需要的东东
+    protected abstract void initViewAndData(Bundle savedInstanceState);
 
 }
