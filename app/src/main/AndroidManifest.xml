@@ -10,7 +10,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-
+    <!--设置角标-->
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE "/>
     <application
         android:name=".KC_application"
         android:allowBackup="true"
@@ -23,12 +25,12 @@
         tools:replace="android:appComponentFactory">
 
         <!-- Stomp -->
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".MainActivity">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!-- 无用 -->
         <activity android:name=".activity.SunmiTest2Activity">
@@ -80,11 +82,12 @@
         <activity android:name=".activity.GalleryActivity"/>
         <activity android:name=".activity.NumOcrActivity">
         </activity>
+        <!--mvp 角标-->
         <activity android:name=".activity.MvpRequestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
     </application>
 

@@ -16,7 +16,11 @@ import android.widget.ViewSwitcher;
 
 import com.android.myapplicationtest.R;
 import com.android.myapplicationtest.util.LogUtil;
+import com.chunsheng.mylib.processor.Hello;
+import com.chunsheng.mylib.processor.Route;
 
+@Route(path = "/activity")
+@Hello("MainTest")   //自定义的Hello注解
 public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactory {
 
     private Gallery gallery;

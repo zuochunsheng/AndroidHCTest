@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.myapplicationtest.MainActivity;
 import com.android.myapplicationtest.R;
 
 import androidx.core.app.NotificationCompat;

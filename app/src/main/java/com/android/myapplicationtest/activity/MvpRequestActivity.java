@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -82,11 +83,20 @@ public class MvpRequestActivity extends BaseMvpActivity<UserPresenter> implement
             @Override
             public void onClick(android.view.View v) {
                 mOrgPresenter.getOrg("google");
+                setBadgenumber(MvpRequestActivity.this,5);
             }
         });
 
     }
 
+    private void setBadgenumber(Context context,int i){
+        Bundle extra =new Bundle();
+        extra.putString("package", "com.android.myapplicationtest");
+        extra.putString("class", "MvpRequestActivity");
+        extra.putInt("badgenumber", i);
+        context.getContentResolver().call(Uri.parse("content://com.huawei.android.launcher.settings/badge/"), "change_badge", null, extra);
+
+    }
 
     @Override
     public void showOrg(String org) {

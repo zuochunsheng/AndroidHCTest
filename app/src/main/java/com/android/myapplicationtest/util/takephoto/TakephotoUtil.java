@@ -6,10 +6,8 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.myapplicationtest.R;
-import com.android.myapplicationtest.activity.MainActivity;
 import com.android.myapplicationtest.util.ToastUtil;
 import com.chunsheng.permission.IPermission;
 import com.chunsheng.permission.PermissionUtil;
