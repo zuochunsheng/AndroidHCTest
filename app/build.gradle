@@ -99,6 +99,7 @@ dependencies {
     //角标
     implementation "me.leolin:ShortcutBadger:1.1.22@aar"
 
+    // 注解
     implementation project(':javalib')
     annotationProcessor project(':javalib')
 }

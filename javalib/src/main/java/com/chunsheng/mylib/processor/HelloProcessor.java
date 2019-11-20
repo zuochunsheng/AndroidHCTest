@@ -70,6 +70,7 @@ public class HelloProcessor extends AbstractProcessor {
     @Override
     public SourceVersion getSupportedSourceVersion() {
         //java版本 如：jdk1.6or jdk1.7
-        return super.getSupportedSourceVersion();
+        //return super.getSupportedSourceVersion();
+        return SourceVersion.latestSupported();
     }
 }
