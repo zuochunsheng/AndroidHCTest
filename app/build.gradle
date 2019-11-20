@@ -8,6 +8,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         packagingOptions {
@@ -102,4 +103,7 @@ dependencies {
     // 注解
     implementation project(':javalib')
     annotationProcessor project(':javalib')
+
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.multidex:multidex-instrumentation:2.0.0'
 }

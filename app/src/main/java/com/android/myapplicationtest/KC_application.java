@@ -1,8 +1,11 @@
 package com.android.myapplicationtest;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.android.myapplicationtest.net.HttpManager;
+
+import androidx.multidex.MultiDex;
 
 /**
  * @author： zcs
@@ -19,6 +22,11 @@ public class KC_application extends Application {
         return instance;
     }
 
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 
     @Override
     public void onCreate() {
