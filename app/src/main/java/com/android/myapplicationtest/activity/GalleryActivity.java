@@ -13,17 +13,15 @@ import android.widget.Gallery;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher;
-
 import com.android.myapplicationtest.R;
-import com.android.myapplicationtest.util.BindViewTools;
+import com.android.myapplicationtest.annotation.TestAnnotation;
+import com.android.myapplicationtest.hello.HelloWorld;
 import com.android.myapplicationtest.util.LogUtil;
-import com.chunsheng.mylib.processor.BindView;
-import com.chunsheng.mylib.processor.Hello;
-import com.chunsheng.mylib.processor.Route;
+
 
 //@Route(path = "/activity")
 //@Hello("MainTest")   //自定义的Hello注解
-
+@TestAnnotation("main")
 public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactory {
 
     //@BindView(R.id.gallery)
@@ -42,6 +40,10 @@ public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactor
         is = (ImageSwitcher) findViewById(R.id.is);
 
         initGallery();
+
+        // 需要编译之后才会有
+        HelloWorld.test();
+
 
     }
 

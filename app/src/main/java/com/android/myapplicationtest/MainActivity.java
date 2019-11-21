@@ -21,9 +21,7 @@ import android.widget.Toast;
 
 import com.android.myapplicationtest.util.Config;
 import com.android.myapplicationtest.util.LogUtil;
-import com.chunsheng.mylib.processor.Hello;
 import com.google.gson.Gson;
-
 import java.util.HashMap;
 
 import androidx.appcompat.app.AppCompatActivity;

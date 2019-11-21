@@ -1,2 +1,2 @@
-include ':app', ':lib', ':javalib'
+include ':app', ':lib', ':javalib', ':testProcessor'
 include ':openCVLibrary330'
