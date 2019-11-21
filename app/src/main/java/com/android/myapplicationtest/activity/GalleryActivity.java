@@ -21,7 +21,7 @@ import com.android.myapplicationtest.util.LogUtil;
 
 //@Route(path = "/activity")
 //@Hello("MainTest")   //自定义的Hello注解
-@TestAnnotation("main")
+@TestAnnotation("abc")
 public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactory {
 
     //@BindView(R.id.gallery)
