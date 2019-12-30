@@ -10,7 +10,9 @@
     <com.android.myapplicationtest.view.MyView
         android:layout_width="100dp"
         android:layout_height="100dp"
-
+        app:text_text="hello world"
+        app:text_size="20sp"
+        app:text_color="@color/colorAccent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

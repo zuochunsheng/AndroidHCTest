@@ -1,6 +1,7 @@
 package com.android.myapplicationtest.view;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -8,6 +9,8 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import com.android.myapplicationtest.R;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -20,6 +23,10 @@ import androidx.annotation.RequiresApi;
 public class MyView extends View {
 
     private static final String TAG = "MyView";
+    private int textSize;
+    private String textText;
+    private int textColor;
+
 
     public MyView(Context context) {
         super(context);
@@ -27,16 +34,25 @@ public class MyView extends View {
 
     public MyView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.MyView);
+
+        textSize = array.getDimensionPixelSize(R.styleable.MyView_text_size, 15);
+        textText = array.getString(R.styleable.MyView_text_text);
+        textColor = array.getColor(R.styleable.MyView_text_color,Color.BLACK);
+
+        array.recycle();
+
+
     }
 
-    public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-    }
+//    public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+//        super(context, attrs, defStyleAttr);
+//    }
+//
+//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+//    public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+//        super(context, attrs, defStyleAttr, defStyleRes);
+//    }
 
     private int getMySize(int defaultSize, int measureSpec) {
         // 设定一个默认大小 defaultSize
@@ -107,9 +123,9 @@ public class MyView extends View {
 
         // 定义蓝色画笔，绘制文字
         Paint paint = new Paint();
-        paint.setColor(Color.BLUE);
-        paint.setTextSize(60);
-        canvas.drawText("大傻瓜", 0, r+paint.getTextSize()/2, paint);
+        paint.setColor(textColor);//Color.BLUE
+        paint.setTextSize(textSize);//60
+        canvas.drawText(textText, 0, r+paint.getTextSize()/2, paint);
 
 
 
