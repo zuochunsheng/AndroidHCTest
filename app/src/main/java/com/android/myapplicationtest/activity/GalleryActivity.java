@@ -18,6 +18,8 @@ import com.android.myapplicationtest.annotation.TestAnnotation;
 import com.android.myapplicationtest.hello.HelloWorld;
 import com.android.myapplicationtest.util.LogUtil;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 
 //@Route(path = "/activity")
 //@Hello("MainTest")   //自定义的Hello注解
@@ -27,8 +29,10 @@ public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactor
     //@BindView(R.id.gallery)
     Gallery gallery;
     //private MyGallery gallery;
-    private ImageSwitcher is;
+    private ImageSwitcher imageSwitcher;
     private ImageAdapter imageAdapter;
+
+    private RecyclerView recyclerview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,8 @@ public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactor
        // BindViewTools.bind(this);
 
         gallery = findViewById(R.id.gallery);
-        is = (ImageSwitcher) findViewById(R.id.is);
+        imageSwitcher = (ImageSwitcher) findViewById(R.id.is);
+        recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
 
         initGallery();
 
@@ -45,6 +50,7 @@ public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactor
         HelloWorld.test();
 
 
+        initRecyclerView();
     }
 
     @Override
@@ -86,10 +92,10 @@ public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactor
         });
 
 
-        is.setFactory(this);
+        imageSwitcher.setFactory(this);
         //添加动画
-        is.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
-        is.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+        imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+        imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
     }
 
 
@@ -151,6 +157,13 @@ public class GalleryActivity extends Activity implements ViewSwitcher.ViewFactor
             }
             return imageView;
         }
+
+    }
+
+
+    private void initRecyclerView(){
+
+
 
     }
 }
