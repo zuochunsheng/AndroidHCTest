@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.android.myapplicationtest.net.HttpManager;
+import com.android.myapplicationtest.util.InjectTool;
 
 import androidx.multidex.MultiDex;
 
@@ -26,6 +27,7 @@ public class KC_application extends Application {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         MultiDex.install(this);
+        InjectTool.dexInject();
     }
 
     @Override

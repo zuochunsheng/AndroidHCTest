@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import com.android.myapplicationtest.R;
 import com.android.myapplicationtest.view.zhuanpan.LuckyPanView;
 
-import java.util.Random;
 
 public class CustomActivity extends Activity {
 
