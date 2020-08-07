@@ -48,7 +48,6 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:preference-v7:28.0.0'
     implementation 'com.android.support:cardview-v7:28.0.0'
-    implementation 'com.android.support:preference-v7:28.0.0'
 
     //implementation 'com.squareup.okhttp3:okhttp:3.9.0'
 
@@ -110,4 +109,6 @@ dependencies {
     annotationProcessor project(':testProcessor')
 
     //implementation 'com.github.xyjian758:WebChoseFile:0.1'
+
+    //implementation externalOKHTTP
 }
