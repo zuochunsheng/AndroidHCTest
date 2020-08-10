@@ -80,8 +80,9 @@ ext {
     externalPicasso = 'com.squareup.picasso:picasso:2.5.2'
 
 
-    externalGSON = 'com.google.code.gson:gson:2.8.3'
-    externalFastjson = 'com.alibaba:fastjson:1.2.24'
+    externalGSON = 'com.google.code.gson:gson:2.8.6'
+    externalFastjson = 'com.alibaba:fastjson:1.2.73' // jsonObject
+    externalJackjsonMapper = 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
     externalEventBus = 'org.greenrobot:eventbus:3.1.1'
     externalAndroidEventBus = 'org.simple:androideventbus:1.0.5.1'
 

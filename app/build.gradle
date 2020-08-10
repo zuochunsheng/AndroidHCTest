@@ -110,5 +110,7 @@ dependencies {
 
     //implementation 'com.github.xyjian758:WebChoseFile:0.1'
 
-    //implementation externalOKHTTP
+
+    implementation externalJackjsonMapper
+
 }
