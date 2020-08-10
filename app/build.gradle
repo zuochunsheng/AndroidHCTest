@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+def dbflow_version = "4.2.1"
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -37,6 +37,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation externalMockitoAndroid
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     //implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
@@ -112,5 +113,12 @@ dependencies {
 
 
     implementation externalJackjsonMapper
+    implementation externalTimber
 
+
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    // sql-cipher database encyrption (optional)
+    implementation "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
 }

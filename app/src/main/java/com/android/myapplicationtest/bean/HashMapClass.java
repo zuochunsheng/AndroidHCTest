@@ -3,8 +3,8 @@ package com.android.myapplicationtest.bean;
 import android.app.WallpaperManager;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
+import android.util.Log;
 
-import com.android.myapplicationtest.util.LogUtil;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -71,12 +71,12 @@ public class HashMapClass extends HashMap {
             Student student = new Student("Han MeiMei");
 
             // 获取私有方法，同样注意 getMethod 和 getDeclaredMethod 的区别
-            Method goMethod = Student.class.getDeclaredMethod("goToSchool", null);
+            Method goMethod = Student.class.getDeclaredMethod("goToSchool");
             // 方法修饰符如果是private 或者 package 权限的 ,赋予访问权限
             goMethod.setAccessible(true);
 
             // 调用 goToSchool 方法。
-            goMethod.invoke(student, null);
+            goMethod.invoke(student);
 
         } catch (ReflectiveOperationException e) {
             e.printStackTrace();
@@ -128,7 +128,7 @@ public class HashMapClass extends HashMap {
                 return value;
             }
         } catch (Exception e) {
-            LogUtil.e("tag", "Unable to read system properties");
+            Log.e("tag", "Unable to read system properties");
         }
         return defaultValue;
     }

@@ -2,11 +2,13 @@ package com.android.myapplicationtest;
 
 import android.app.Application;
 import android.content.Context;
-
+import androidx.multidex.MultiDex;
 import com.android.myapplicationtest.net.HttpManager;
 import com.android.myapplicationtest.util.InjectTool;
+import com.android.myapplicationtest.util.TimberUtil;
+import com.raizlabs.android.dbflow.config.FlowManager;
 
-import androidx.multidex.MultiDex;
+import timber.log.Timber;
 
 /**
  * @author： zcs
@@ -40,5 +42,19 @@ public class KC_application extends Application {
                 .setDebug(BuildConfig.DEBUG)
                 .setOkHttpClient(HttpManager.getInstance().createDefaultClient())
                 .setRetrofit(HttpManager.getInstance().createRetrofit());
+
+
+        //设置log自动在apk为debug版本时打开，在release版本时关闭
+        TimberUtil.setLogAuto();
+        //也可以设置log一直开
+        //TimberUtil.setLogDebug();
+
+        //打印tag为类名
+        Timber.v("---onCreate---");
+
+
+        //初始化DBFLOW
+        FlowManager.init(this);
+
     }
 }

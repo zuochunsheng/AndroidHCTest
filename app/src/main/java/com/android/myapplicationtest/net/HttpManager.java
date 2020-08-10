@@ -1,7 +1,6 @@
 package com.android.myapplicationtest.net;
 
 import android.util.Log;
-
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
