@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zuochunsheng:permission:0.5@aar">
+    <CLASSES>
+      <root url="jar://D:/gradle/library/caches/transforms-1/files-1.1/jetified-permission-0.5.aar/ab96b51d92aa3767d662578f388f59f7/jars/classes.jar!/" />
+      <root url="file://D:/gradle/library/caches/transforms-1/files-1.1/jetified-permission-0.5.aar/ab96b51d92aa3767d662578f388f59f7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/gradle/library/caches/modules-2/files-2.1/com.github.zuochunsheng/permission/0.5/19f16c65a274f6d21cc803dea9b4a92c546ab466/permission-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

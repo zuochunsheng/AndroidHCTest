@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.yanzhenjie:permission:2.0.0-rc12@aar">
     <CLASSES>
-      <root url="file://D:/gradle/library/caches/transforms-1/files-1.1/permission-2.0.0-rc12.aar/8679300cc2020a7157d1757108936d90/res" />
-      <root url="jar://D:/gradle/library/caches/transforms-1/files-1.1/permission-2.0.0-rc12.aar/8679300cc2020a7157d1757108936d90/jars/classes.jar!/" />
+      <root url="jar://D:/gradle/library/caches/transforms-1/files-1.1/jetified-permission-2.0.0-rc12.aar/9d389ad1f338cd05188f6e376cda42b1/jars/classes.jar!/" />
+      <root url="file://D:/gradle/library/caches/transforms-1/files-1.1/jetified-permission-2.0.0-rc12.aar/9d389ad1f338cd05188f6e376cda42b1/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://D:/gradle/library/caches/modules-2/files-2.1/com.yanzhenjie/permission/2.0.0-rc12/2de1000917c257c22c16c5ed2af99807ca972c93/permission-2.0.0-rc12-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://D:/gradle/library/caches/modules-2/files-2.1/com.yanzhenjie/permission/2.0.0-rc12/5029ea7b4a8ec1ddceb5e6f14acadae163dd9804/permission-2.0.0-rc12-sources.jar!/" />
     </SOURCES>

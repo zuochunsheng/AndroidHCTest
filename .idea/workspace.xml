@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2442e1b9-d453-48cb-b4b4-94ee29dee9fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_rc01_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_rc01_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_rc01_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_rc01_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__auto_common_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__auto_service_1_0_rc4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__checker_qual_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zuochunsheng_permission_0_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_adapter_rxjava2_2_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__error_prone_annotations_2_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__guava_23_5_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_2_9_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_leolin_ShortcutBadger_1_1_22_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__top_zibin_Luban_1_1_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestByHC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lib.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/org/opencv/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/compileDebugAidl/dependency.store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/intermediate-jars/debug/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/intermediate-jars/debug/res.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/BuildConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/R$attr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/R$id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/AsyncServiceHelper$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/AsyncServiceHelper$3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/AsyncServiceHelper$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/AsyncServiceHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/BaseLoaderCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/Camera2Renderer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/Camera2Renderer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase$CvCameraViewFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase$ListItemAccessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraBridgeViewBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraGLRendererBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/CameraRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/FpsMeter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/InstallCallbackInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/JavaCameraView$JavaCameraFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/JavaCameraView$JavaCameraSizeAccessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/JavaCameraView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/OpenCVLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/StaticHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/android/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/calib3d/Calib3d.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/calib3d/StereoSGBM.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/CvException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/CvType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/DMatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/KeyPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Mat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfByte.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfDouble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfFloat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfFloat6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfInt4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfKeyPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfPoint2f.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfPoint3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfPoint3f.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/MatOfRect2d.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Point.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Point3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Range.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Rect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/RotatedRect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Scalar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/Size.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/core/TickMeter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/dnn/DictValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/dnn/Dnn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/dnn/Importer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/dnn/Layer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/dnn/Net.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/engine/OpenCVEngineInterface$Stub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/engine/OpenCVEngineInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/AKAZE.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/BFMatcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/BOWImgDescriptorExtractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/BOWKMeansTrainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/BOWTrainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/BRISK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/DescriptorExtractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/DescriptorMatcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/Feature2D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/FeatureDetector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/Features2d.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/GFTTDetector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/KAZE.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/MSER.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/ORB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/features2d/Params.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/imgcodecs/Imgcodecs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/imgproc/CLAHE.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/imgproc/LineSegmentDetector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/imgproc/Moments.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/imgproc/Subdiv2D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/ANN_MLP.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/DTrees.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/EM.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/KNearest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/LogisticRegression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/Ml.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/NormalBayesClassifier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/RTrees.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/SVM.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/SVMSGD.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/StatModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/ml/TrainData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/objdetect/CascadeClassifier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/objdetect/HOGDescriptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/osgi/OpenCVInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/AlignMTB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/CalibrateCRF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/CalibrateDebevec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/CalibrateRobertson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/MergeDebevec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/MergeMertens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/MergeRobertson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/Photo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/Tonemap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/TonemapDrago.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/TonemapDurand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/TonemapMantiuk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/photo/TonemapReinhard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/utils/Converters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/video/BackgroundSubtractorMOG2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/video/DualTVL1OpticalFlow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/video/FarnebackOpticalFlow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openCVLibrary330/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/video/KalmanFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_common_1_0_0_alpha09_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_common_1_0_0_alpha09_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_fragment_1_0_0_alpha09_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_fragment_1_0_0_alpha09_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_runtime_1_0_0_alpha09_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_runtime_1_0_0_alpha09_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_ui_1_0_0_alpha09_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_navigation_navigation_ui_1_0_0_alpha09_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_andrewreitz_spock_android_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_andrewreitz_spock_android_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_rc01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_preference_v7_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_25_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_0_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_yalantis_ucrop_2_2_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_yalantis_ucrop_2_2_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_7_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_8_8_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_8_8_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_retrofit_retrofit2_rxjava2_adapter_1_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_rmtheis_tess_two_9_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_rmtheis_tess_two_9_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_5_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yanzhenjie_permission_2_0_0_rc12_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yanzhenjie_permission_2_0_0_rc12_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_yokeyword_fragmentation_1_3_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_yokeyword_fragmentation_1_3_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_yokeyword_fragmentation_core_1_3_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_yokeyword_fragmentation_core_1_3_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0_jar.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestByHC" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-222">
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="63" />
+    <option name="y" value="-28" />
+    <option name="width" value="2198" />
+    <option name="height" value="1414" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TestByHC" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24011299" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Structure" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.49251497" />
+      <window_info anchor="bottom" id="Debug" order="1" weight="0.32934132" />
+      <window_info anchor="bottom" id="Build" order="2" weight="0.46919432" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.63023955" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Logcat" order="8" weight="0.6796407" />
+      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.32905295" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Device File Explorer" order="1" side_tool="true" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.20789288" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info active="true" anchor="right" id="Preview" order="5" visible="true" weight="0.3258004" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
