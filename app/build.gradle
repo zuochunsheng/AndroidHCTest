@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+
+apply plugin: 'io.objectbox'
+
 def dbflow_version = "4.2.1"
 android {
     compileSdkVersion 28
@@ -12,6 +15,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         packagingOptions {
+            pickFirst 'META-INF/*'
             exclude 'META-INF/rxjava.properties'
         }
         ndk {
@@ -121,4 +125,7 @@ dependencies {
     implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
     // sql-cipher database encyrption (optional)
     implementation "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
+
+    //debugImplementation "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion"
+    //releaseImplementation "io.objectbox:objectbox-android:$objectboxVersion"
 }

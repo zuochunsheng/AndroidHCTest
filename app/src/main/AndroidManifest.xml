@@ -13,6 +13,8 @@
     <!-- 设置角标 -->
     <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE " />
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
     <application
         android:name=".KC_application"
         android:allowBackup="true"
