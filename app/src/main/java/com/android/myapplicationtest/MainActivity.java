@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
                 //setBadgenumber(MainActivity.this,6);
                 //setBadgeNumber(7);
 
-                setBadgeNum(4);
+                //setBadgeNum(4);
                 //setNotification();
 
 
                 //创建client 实例
-                //createStompClient();
+                createStompClient();
             }
         });
         subcribe.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        //发送
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //点对点订阅，根据用户名来推送消息
+    //点对点订阅，根据用户名来推送消息  接收
     private void registerStompTopic() {
         //订阅/table/"+tableid+"/info这个主题
         String tableid = "88";

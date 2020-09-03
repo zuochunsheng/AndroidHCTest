@@ -46,8 +46,7 @@ public class OkHttpConnectionProvider extends AbstractConnectionProvider {
 
     @Override
     void createWebSocketConnection() {
-        Request.Builder requestBuilder = new Request.Builder()
-                .url(mUri);
+        Request.Builder requestBuilder = new Request.Builder().url(mUri);
 
         addConnectionHeadersToBuilder(requestBuilder, mConnectHttpHeaders);
 

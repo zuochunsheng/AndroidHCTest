@@ -9,9 +9,10 @@ package com.android.myapplicationtest.util;
  */
 public class Config {
 
-    //public static final String WS_URI = "http://192.168.1.47:8082/oss-transaction/messages/websocket";
 
-    public static final String WS_URI = "https://ops.ledcas.com/wsconnect/websocket";//peter  测试
+
+    public static final String WS_URI = "https://ops.ledcas.com/oss-transaction/messages";//peter  测试
+    //public static final String WS_URI = "https://uat.hcit6705.win/oss-transaction/messages";//peter  测试
 
 
     //public static final String WS_URI = "https://ops.ledcas.com/oss-transaction/messages/websocket";
