@@ -9,7 +9,10 @@ import android.widget.TextView;
 import com.android.myapplicationtest.R;
 import com.android.myapplicationtest.util.livedata.NameViewModel;
 
-
+/*
+ * https://blog.csdn.net/weixin_30556161/article/details/98778103
+ *
+ */
 public class LiveTestActivity extends AppCompatActivity {
 
     private TextView tvName;
