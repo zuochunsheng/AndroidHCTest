@@ -96,6 +96,7 @@
         <!--转盘-->
         <activity android:name=".activity.CustomActivity">
         </activity>
+        <activity android:name=".activity.LiveTestActivity"/>
     </application>
 
 </manifest>
