@@ -85,18 +85,19 @@
         <activity android:name=".activity.GalleryActivity">
         </activity>
         <activity android:name=".activity.NumOcrActivity"></activity>
-        <!-- mvp 角标 -->
+        <!-- mvp , 角标 -->
         <activity android:name=".activity.MvpRequestActivity">
 
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
         </activity>
         <!--转盘-->
         <activity android:name=".activity.CustomActivity">
         </activity>
-        <activity android:name=".activity.LiveTestActivity"/>
+        <activity android:name=".activity.LiveTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
