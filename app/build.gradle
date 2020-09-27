@@ -133,9 +133,15 @@ dependencies {
     //debugImplementation "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion"
     //releaseImplementation "io.objectbox:objectbox-android:$objectboxVersion"
     // ViewModel and LiveData
-    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
     // alternatively, just ViewModel
     //implementation "androidx.lifecycle:lifecycle-viewmodel:2.0.0"
     // alternatively, just LiveData
     //implementation "androidx.lifecycle:lifecycle-livedata:2.0.0"
+
+    //annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.0.0"
+    //annotationProcessor "androidx.room:room-compiler:2.2.4"
+
+    // Saved state module
+    //implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0"
 }

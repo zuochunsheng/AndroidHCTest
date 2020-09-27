@@ -10,7 +10,7 @@ import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 
-// custom livedata
+//2 custom livedata  需要单例
 public class NetworkLiveData extends LiveData<NetworkInfo> {
 
     private final Context mContext;
