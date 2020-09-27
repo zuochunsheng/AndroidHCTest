@@ -52,14 +52,14 @@ public class CustomActivity extends AppCompatActivity {
             }
         });
 
-        Project project = new Project();
-        project.setBoid("boid-cus");
-        project.setTitle("wosititle-cus");
-        project.setType("2-cus");
-
-        LiveDataManager.getInstance()
-                .with("goJavaBean",Project.class)
-                .postValue(project);
+//        Project project = new Project();
+//        project.setBoid("boid-cus");
+//        project.setTitle("wosititle-cus");
+//        project.setType("2-cus");
+//
+//        LiveDataManager.getInstance()
+//                .with("goJavaBean",Project.class)
+//                .postValue(project);
 
         new Thread(new Runnable() {
             @Override

@@ -19,11 +19,14 @@ import com.android.myapplicationtest.R;
 import com.android.myapplicationtest.db.User;
 import com.android.myapplicationtest.util.LogUtil;
 import com.android.myapplicationtest.util.livedata.LiveDataManager;
+import com.android.myapplicationtest.util.livedata.ProjectListViewModel;
 import com.android.myapplicationtest.util.livedata.ex.NameViewModel;
 
 import com.android.myapplicationtest.bean.mock.Project;
 import com.android.myapplicationtest.util.livedata.ex.NetworkLiveData;
 import com.android.myapplicationtest.util.livedata.ex.ProjectViewModel;
+
+import java.util.List;
 
 
 /*
@@ -40,6 +43,8 @@ public class LiveTestActivity extends AppCompatActivity {
     private NameViewModel nameViewModel;
     private ProjectViewModel projectViewModel;
     private ProjectViewModel projectViewMode2;
+
+    private ProjectListViewModel projectListViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,34 +117,26 @@ public class LiveTestActivity extends AppCompatActivity {
 //            LogUtil.e("change", "price ="+ price);
 //            tvName4.setText(String.valueOf(price));
 //        });
+
+
+        projectListViewModel = ViewModelProviders.of(this).get(ProjectListViewModel.class);
+
+        observeViewModel(projectListViewModel);
     }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        MutableLiveData<Project> goJavaBean = LiveDataManager.getInstance().with("goJavaBean", Project.class);
-        goJavaBean.observe(this, new Observer<Project>() {
+    private void observeViewModel(ProjectListViewModel viewModel) {
+        // Update the list when the data changes
+        viewModel.getProjectListObservable().observe(this, new Observer<String>() {
             @Override
-            public void onChanged(Project project) {
-                LogUtil.e("change", " onPause project =" + project);
-
-            }
-        });
-
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        MutableLiveData<Project> goJavaBean = LiveDataManager.getInstance().with("goJavaBean", Project.class);
-        goJavaBean.observe(this, new Observer<Project>() {
-            @Override
-            public void onChanged(Project project) {
-                LogUtil.e("change", " onStop project =" + project);
-
+            public void onChanged(@Nullable String projects) {
+                if (projects != null) {
+                    //projectAdapter.setProjectList(projects);
+                    tvName4.setText(projects);
+                }
             }
         });
     }
+
+
 
     public void postValue(View view) {
         //注意：必须调用 setValue(T) 方法才能从主线程更新 LiveData 对象。
@@ -205,7 +202,8 @@ public class LiveTestActivity extends AppCompatActivity {
     }
     public void goskip(View view) {
 
-        Intent intent = new Intent(this, CustomActivity.class);
+        //Intent intent = new Intent(this, CustomActivity.class);
+        Intent intent = new Intent(this, MvpRequestActivity.class);
         startActivity(intent);
     }
 }
