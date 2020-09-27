@@ -16,6 +16,9 @@ public void onChanged(Integer integer) {
 /* LiveDataManager.getInstance().with("goMainFragment",Integer.class)
         .postValue(Integer.parseInt(loginToIndex));*/
 
+
+
+//封装  1
 public class LiveDataManager {
     private static LiveDataManager liveDataManager = new LiveDataManager();
     Map<String, MutableLiveData<Object>> map;
@@ -35,4 +38,6 @@ public class LiveDataManager {
         return (MutableLiveData<T>) map.get(key);
 
     }
+
+
 }
