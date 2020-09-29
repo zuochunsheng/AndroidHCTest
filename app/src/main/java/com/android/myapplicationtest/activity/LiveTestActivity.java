@@ -202,8 +202,8 @@ public class LiveTestActivity extends AppCompatActivity {
     }
     public void goskip(View view) {
 
-        //Intent intent = new Intent(this, CustomActivity.class);
-        Intent intent = new Intent(this, MvpRequestActivity.class);
+        Intent intent = new Intent(this, CustomActivity.class);
+        //Intent intent = new Intent(this, MvpRequestActivity.class);
         startActivity(intent);
     }
 }

@@ -9,31 +9,46 @@
 
     <!--app:default_size="@drawable/vp"-->
     <!--<com.android.myapplicationtest.view.MyView-->
-        <!--android:layout_width="100dp"-->
-        <!--android:layout_height="100dp"-->
-        <!--app:text_color="@color/colorAccent"-->
-        <!--app:text_size="20sp"-->
-        <!--app:text_text="hello world"-->
-        <!--tools:ignore="MissingConstraints"-->
-        <!--tools:layout_editor_absoluteX="142dp"-->
-        <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--app:text_color="@color/colorAccent"-->
+    <!--app:text_size="20sp"-->
+    <!--app:text_text="hello world"-->
+    <!--tools:ignore="MissingConstraints"-->
+    <!--tools:layout_editor_absoluteX="142dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
 
     <com.android.myapplicationtest.view.zhuanpan.LuckyPanView
         android:id="@+id/id_luckypan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:padding="30dp"
-        />
+        android:padding="30dp" />
 
     <ImageView
         android:id="@+id/id_start_btn"
-        android:src="@mipmap/note"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/note"
         tools:ignore="MissingConstraints" />
 
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:id="@+id/showJW"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/city"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp" />-->
+
+<!--    </LinearLayout>-->
 
 
 
