@@ -30,6 +30,10 @@ import com.chunsheng.permission.PermissionUtil;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 
 public class CustomActivity extends AppCompatActivity {
@@ -50,7 +54,7 @@ public class CustomActivity extends AppCompatActivity {
         public void handleMessage(android.os.Message msg) {
             double[] data = (double[]) msg.obj;
 
-            LogUtil.e("location","经度：" + data[0] + "\t纬度:" + data[1]);
+            LogUtil.e("location", "经度：" + data[0] + "\t纬度:" + data[1]);
             List<Address> addList = null;
             Geocoder ge = new Geocoder(getApplicationContext());
             try {
@@ -65,7 +69,7 @@ public class CustomActivity extends AppCompatActivity {
                     latLongString = ad.getLocality();
                 }
             }
-            LogUtil.e("location",latLongString);
+            LogUtil.e("location", latLongString);
         }
 
     };
@@ -107,21 +111,25 @@ public class CustomActivity extends AppCompatActivity {
 //                .with("goJavaBean",Project.class)
 //                .postValue(project);
 
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while (true){
-//                    time++;
-//                    LogUtil.e("thread" + time);
-//                    try {
-//                        Thread.sleep(1000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//
-//            }
-//        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+                    time++;
+                    LogUtil.e("thread time=" + time);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+        }).start();
+
+
+
+
 
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -154,14 +162,34 @@ public class CustomActivity extends AppCompatActivity {
                 if (location != null) {
                     latitude = location.getLatitude(); // 经度
                     longitude = location.getLongitude(); // 纬度
-                    double[] data = { latitude, longitude };
-                    Message msg = handler.obtainMessage();
-                    msg.obj = data;
-                    handler.sendMessage(msg);
+//                    double[] data = { latitude, longitude };
+//                    Message msg = handler.obtainMessage();
+//                    msg.obj = data;
+//                    handler.sendMessage(msg);
+
+                    LogUtil.e("location", "经度：" + latitude + "\t纬度:" + longitude);
+                    getCity(latitude, longitude);
                 }
             }
         }.start();
     }
 
+    private void getCity(double latitude, double longitude) {
+        List<Address> addList = null;
+        Geocoder ge = new Geocoder(getApplicationContext());
+        try {
+            addList = ge.getFromLocation(latitude, longitude, 1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String latLongString = "";
+        if (addList != null && addList.size() > 0) {
+            for (int i = 0; i < addList.size(); i++) {
+                Address ad = addList.get(i);
+                latLongString = ad.getLocality();
+            }
+        }
+        LogUtil.e("location", latLongString);
+    }
 
 }
