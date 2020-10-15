@@ -18,12 +18,14 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.android.myapplicationtest.R;
 import com.android.myapplicationtest.bean.mock.Project;
 import com.android.myapplicationtest.util.LogUtil;
 import com.android.myapplicationtest.util.livedata.LiveDataManager;
 import com.android.myapplicationtest.util.livedata.ex.NameViewModel;
+import com.android.myapplicationtest.view.WaveView;
 import com.android.myapplicationtest.view.zhuanpan.LuckyPanView;
 import com.chunsheng.permission.IPermission;
 import com.chunsheng.permission.PermissionUtil;
@@ -111,22 +113,21 @@ public class CustomActivity extends AppCompatActivity {
 //                .with("goJavaBean",Project.class)
 //                .postValue(project);
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-                    time++;
-                    LogUtil.e("thread time=" + time);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-            }
-        }).start();
-
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                while (true) {
+//                    time++;
+//                    LogUtil.e("thread time=" + time);
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//
+//            }
+//        }).start();
 
 
 
@@ -147,6 +148,8 @@ public class CustomActivity extends AppCompatActivity {
             }
         });
 
+        WaveView waveView =  (WaveView)findViewById(R.id.waveView);
+        waveView.startAnim();
     }
 
     /**

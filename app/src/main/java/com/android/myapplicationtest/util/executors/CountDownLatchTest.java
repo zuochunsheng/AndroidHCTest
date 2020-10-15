@@ -33,6 +33,7 @@ class CountDownLatchTest {
                 latch.countDown();
             }
         });
+        //关闭线程池
         es.shutdown();
 
         try {
