@@ -8,12 +8,15 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.UserHandle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -148,8 +151,30 @@ public class CustomActivity extends AppCompatActivity {
             }
         });
 
+        //水波纹动画
         WaveView waveView =  (WaveView)findViewById(R.id.waveView);
         waveView.startAnim();
+
+
+//        mStartBtn.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+//            @Override
+//            public void onGlobalLayout() {
+//                if (Build.VERSION.SDK_INT >= 16) {
+//                    mStartBtn.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+//                }else {
+//                    mStartBtn.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+//                }
+//                int width = mStartBtn.getWidth();
+//            }
+//        });
+        //mStartBtn.getViewTreeObserver().removeOnGlobalLayoutListener();
+
+        mStartBtn.post(new Runnable() {
+            @Override
+            public void run() {
+                int width = mStartBtn.getWidth();
+            }
+        });
     }
 
     /**
