@@ -15,4 +15,22 @@
         android:layout_width="100dp"
         android:layout_height="40dp" />
 
+    <TextView
+        android:id="@+id/tv_countDown"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="开始倒计时"
+        android:background="@color/colorAccent"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_countDown2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="倒计时中间点击"
+        android:background="@color/colorAccent"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
 </LinearLayout>
