@@ -68,7 +68,7 @@ public class NoticeActivity extends Activity {
         tvCountDown2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countdown(40, tvCountDown);
+                countdown(41, tvCountDown);
             }
         });
 
@@ -133,23 +133,31 @@ public class NoticeActivity extends Activity {
     }
 
     private void countdown(int time, TextView tvCountDown) {
-        LogUtil.e("time :" + time);
-        LogUtil.e("timer == null :" + (timer == null));
+      LogUtil.e("time total :" + time);
+//        LogUtil.e("timer == null :" + (timer == null));
 
         if (timer != null) {
             timer.cancel();
             timer = null;
         }
 
-        timer = new CountDownTimer(time * 1000, 1000) {
+        timer = new CountDownTimer(time * 1000 + 1000, 1000) {
 
             @Override
             public void onTick(long millisUntilFinished) {
-                tvCountDown.setText(TimeFormatUtil.formatDuration(millisUntilFinished / 1000, 1));
+                LogUtil.e("onTick millisUntilFinished:"+ millisUntilFinished);
+                //LogUtil.e("onTick int seconds:"+ (int)(millisUntilFinished *1.0 / 1000 -1));
+                //String timeformat = TimeFormatUtil.formatDuration((int)(millisUntilFinished / 1000), 1);
+                long round = Math.round((double) (millisUntilFinished *1.0/ 1000 -2));
+                LogUtil.e("onTick round seconds:"+ round);
+                String timeformat = TimeFormatUtil.formatDuration(round, 1);
+                LogUtil.e("onTick timeformat:"+ timeformat);
+                tvCountDown.setText(timeformat);
             }
 
             @Override
             public void onFinish() {
+                LogUtil.e("onFinish ");
                 tvCountDown.setText("倒计时完成");
 
             }
