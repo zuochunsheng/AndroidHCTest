@@ -1,8 +1,24 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'io.objectbox'
+apply plugin: 'com.enjoy.jiagu' //gradle-plugins 下的文件
 
 def dbflow_version = "4.2.1"
+
+
+jiagu{
+    username "13761654037"
+    password "zuo123456"
+    keyAlias 'rotary'
+    keyPassword 'marktab20200701'
+    storeFile file('../speed.jks').absolutePath
+    storePassword 'marktab20200701'
+
+    //360加固插件地址
+    jiaguToolPath "D:\\360Downloads\\360jiagubao_windows_64\\jiagu\\jiagu.jar"
+}
+
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -34,6 +50,8 @@ android {
         }
     }
 }
+
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

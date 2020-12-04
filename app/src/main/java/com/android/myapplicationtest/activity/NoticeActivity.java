@@ -50,12 +50,12 @@ public class NoticeActivity extends Activity {
         tvNotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //showNotifictionIcon(NoticeActivity.this,"我是title，中国第一美男，我是title，中国第一美男","我是message，我是demo我不是测试我是text,我是message，我是demo我不是测试我是text");
+                showNotifictionIcon(NoticeActivity.this,"我是title，中国第一美男，我是title，中国第一美男","我是message，我是demo我不是测试我是text,我是message，我是demo我不是测试我是text");
 
-                if (timer != null) {
-                    timer.cancel();
-                    timer = null;
-                }
+//                if (timer != null) {
+//                    timer.cancel();
+//                    timer = null;
+//                }
             }
         });
 

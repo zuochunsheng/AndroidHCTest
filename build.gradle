@@ -14,6 +14,7 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        mavenLocal()
     }
     dependencies {
         //classpath 'com.android.tools.build:gradle:3.3.0-alpha05'
@@ -21,6 +22,8 @@ buildscript {
         //classpath 'com.android.tools.build:gradle:3.3.0-alpha13'
 
         classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
+
+        classpath "com.enjoy:jiagu:1.0" //上传到 mavenLocal()
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

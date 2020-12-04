@@ -1,2 +1,3 @@
+include ':jiagu'
 include ':app', ':lib', ':javalib', ':testProcessor'
 include ':openCVLibrary330'
