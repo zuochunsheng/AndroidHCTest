@@ -163,4 +163,10 @@ dependencies {
 
     // Saved state module
     //implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0"
+
+    // 后台任务
+    implementation "android.arch.work:work-runtime:1.0.0"
+    //动画
+    implementation "com.airbnb.android:lottie:3.0.1"
+
 }

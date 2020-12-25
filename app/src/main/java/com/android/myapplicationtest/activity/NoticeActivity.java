@@ -148,7 +148,7 @@ public class NoticeActivity extends Activity {
                 LogUtil.e("onTick millisUntilFinished:"+ millisUntilFinished);
                 //LogUtil.e("onTick int seconds:"+ (int)(millisUntilFinished *1.0 / 1000 -1));
                 //String timeformat = TimeFormatUtil.formatDuration((int)(millisUntilFinished / 1000), 1);
-                long round = Math.round((double) (millisUntilFinished *1.0/ 1000 -2));
+                long round = Math.round((double) (millisUntilFinished *1.0/ 1000 -1));
                 LogUtil.e("onTick round seconds:"+ round);
                 String timeformat = TimeFormatUtil.formatDuration(round, 1);
                 LogUtil.e("onTick timeformat:"+ timeformat);

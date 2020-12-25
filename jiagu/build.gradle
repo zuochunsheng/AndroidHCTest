@@ -17,7 +17,7 @@ apply plugin: 'maven-publish'
 
 publishing {
     publications {
-        JiaguPlguin(MavenPublication) {//JiaguPlguin 自定义的名字
+        JiaguPlguin(MavenPublication) {//JiaguPlguin 自定义的名字 classpath
             from components.java
             groupId 'com.enjoy'
             artifactId 'jiagu'

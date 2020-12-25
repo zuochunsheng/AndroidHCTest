@@ -25,21 +25,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".activity.TouchActivity">
-
-        </activity>
-        <!-- Stomp -->
-        <activity android:name=".MainActivity">
-
-        </activity> <!-- 无用 -->
-        <activity android:name=".activity.SunmiTest2Activity">
-
-        </activity> <!-- 通知栏测试 -->
-        <activity android:name=".activity.NoticeActivity">
+        <activity android:name=".activity.StaticLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.TouchActivity"></activity> <!-- Stomp -->
+        <activity android:name=".MainActivity"></activity> <!-- 无用 -->
+        <activity android:name=".activity.SunmiTest2Activity"></activity> <!-- 通知栏测试 -->
+        <activity android:name=".activity.NoticeActivity">
         </activity> <!-- 文字识别 -->
         <!-- <activity android:name=".activity.OcrActivity"> -->
         <!-- <intent-filter> -->
@@ -65,11 +60,11 @@
         <activity
             android:name=".util.takephoto.ShadowActivity"
             android:theme="@android:style/Theme.Translucent" /> <!-- 图片画廊 -->
-        <activity android:name=".activity.GalleryActivity"></activity>
+        <activity android:name=".activity.GalleryActivity" />
         <activity android:name=".activity.NumOcrActivity" /> <!-- mvp , 角标 -->
-        <activity android:name=".activity.MvpRequestActivity"></activity> <!-- 转盘,水波纹 -->
-        <activity android:name=".activity.CustomActivity"></activity>
-        <activity android:name=".activity.LiveTestActivity"></activity>
+        <activity android:name=".activity.MvpRequestActivity" /> <!-- 转盘,水波纹 -->
+        <activity android:name=".activity.CustomActivity" /> <!-- constraint -->
+        <activity android:name=".activity.LiveTestActivity" />
     </application>
 
 </manifest>

@@ -19,12 +19,13 @@ public class JiaguPlugin implements Plugin<Project> {
         project.afterEvaluate(new Action<Project>() {
             @Override
             public void execute(final Project project) {
-                String username = jiagu.getUsername();
+                //String username = jiagu.getUsername();
                 //System.out.println(username);
 
                 //AppExtension android = project.getExtensions().getByName("android");
                 AppExtension android = project.getExtensions().getByType(AppExtension.class);
 
+                // 变种
                 android.getApplicationVariants().all(new Action<ApplicationVariant>() {
                     @Override
                     public void execute(ApplicationVariant applicationVariant) {
